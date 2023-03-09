@@ -1,61 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Interactive rating component</title>
 </head>
+
 <body>
 
   <main class="main">
-    <i class="fa-solid fa-star"></i>
+    <img class="main__image" src="./images/icon-star.svg" alt="Icon for star">
     <h1 class="main__title">How did we do?</h1>
 
     <p class="main__para">
-      Please let us know how we did with your support request. All feedback is appreciated 
+      Please let us know how we did with your support request. All feedback is appreciated
       to help us improve our offering!
     </p>
 
     <ul class="main__list">
-      <li>1</li>
-      <li>2</li>
-      <li>3</li>
-      <li>4</li>
-      <li>5</li>
+      <li class="list__item">1</li>
+      <li class="list__item">2</li>
+      <li class="list__item">3</li>
+      <li class="list__item">4</li>
+      <li class="list__item">5</li>
     </ul>
 
     <button class="main__submitBtn">
       SUBMIT
     </button>
-
   </main>
 
+  <br>
 
-  
-    1 2 3 4 5
-  
-    Submit
-  
-    <!-- Rating state end -->
-  
-    <!-- Thank you state start -->
-  
-    You selected <!-- Add rating here --> out of 5
-  
-    Thank you!
-  
-    We appreciate you taking the time to give a rating. If you ever need more support, 
-    don’t hesitate to get in touch!
-  
-    <!-- Thank you state end -->
+  <section class="response response--hidden">
+    <img src="./images/illustration-thank-you.svg" alt="">
+    <p class="response__para response__para--highlight">
+      You selected <!-- Add rating here--> out of 5
+    </p>
 
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="">Samoina</a>.
-    </div>
-  
+    <h2 class="response__title">Thank you!</h2>
+    <p class="response__para">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+  </section>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="">Samoina</a>.
+  </div> -->
+
 </body>
+
 </html>
