@@ -6,17 +6,12 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -29,33 +24,19 @@ Users should be able to:
 - Select and submit a number rating
 - See the "Thank you" card state after submitting a rating
 
-### Screenshot
-
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
-## My process
+- Solution URL: [Github Link](https://github.com/samoina/interactive-rating)
+- Live Site URL: [Netlify Live Link](https://samoina-interactive-rating.netlify.app/)
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- Vanilla Javascript
 - Mobile-first workflow
 - BEM naming convention
-
 
 ### What I learned
 
@@ -106,24 +87,13 @@ function displayResponse(ev){
 }
 ```
 
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
 ### Useful resources
 
-1. [Josh Comeau's CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/#our-finished-product-11) - This is an excellent resource for doing a CSS reset. This involves creating a custom baseline style that makes CSS  alot easier to style. I really loved how Josh took time to breakdown his approach, and I will be using his liked his style and tweaking it to suit my projects going forward.
+1. [Josh Comeau's CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/#our-finished-product-11) - This is an excellent resource for doing a CSS reset. This involves creating a custom baseline style that makes CSS  alot easier to style. I really loved how Josh took time to breakdown his approach, and I will be using his style and tweaking it to suit my projects going forward.
 
 2. I used [The Markdown Guide](https://www.markdownguide.org/basic-syntax/) to better style this README and for numbering some of the content. 
 
 3. I used this [CSS Tricks](https://css-tricks.com/hover-on-everything-but/) resource to apply the hover state over everything but the element actually hovered on and change the styling. 
-
-
-
-
-
 
 ## Author
 

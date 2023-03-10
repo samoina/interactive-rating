@@ -19,7 +19,6 @@ function displayResponse(ev){
   rating.textContent = listValue;
   mainResponse.classList.toggle('main__hidden');
   
-
   ev.preventDefault();
 }
 
