@@ -53,37 +53,27 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- BEM naming convention
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+1. I need to add blank lines before and after a heading on my README for compatibility. 
 
-To see how you can add code snippets, see below:
+2. When I checked the design folder (on active states), I realized that hovering over the rating numbers should change the color of the element been hovered over AND the adjacent sibling element - in different ways. 
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+I was a little confused on how to achieve this, but found a resourceful way to do it on the CSS Tricks website. I needed to apply the color change to the list-items when the parent is hovered over. AND THEN, when the parent ul + individual list item is hovered, I change the color to reflect the desisgn provided. This is how I did it on CSS.
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.rating__list:hover > .list__item {
+  background-color: var(--light-grey);
+}
+
+.rating__list:hover > .list__item:hover {
+  background-color: var(--orange);
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
@@ -93,7 +83,13 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [Josh Comeau's CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/#our-finished-product-11) - This is an excellent resource for doing a CSS reset. This involves creating a custom baseline style that makes CSS  alot easier to style. I really loved how Josh took time to breakdown his approach, and I will be using his liked his style and tweaking it to suit my projects going forward.
+1. [Josh Comeau's CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/#our-finished-product-11) - This is an excellent resource for doing a CSS reset. This involves creating a custom baseline style that makes CSS  alot easier to style. I really loved how Josh took time to breakdown his approach, and I will be using his liked his style and tweaking it to suit my projects going forward.
+
+2. I used [The Markdown Guide](https://www.markdownguide.org/basic-syntax/) to better style this README and for numbering some of the content. 
+
+3. I used this [CSS Tricks](https://css-tricks.com/hover-on-everything-but/) resource to apply the hover state over everything but the element actually hovered on and change the styling. 
+
+
 
 
 

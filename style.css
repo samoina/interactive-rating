@@ -5,6 +5,7 @@
   --white: hsl(0, 0%, 100%);
   --light-grey: hsl(217, 12%, 63%);
   --medium-grey: hsl(216, 12%, 54%);
+  --shade-blue: hsl(211, 18%, 29%);
   --dark-blue: hsl(213, 19%, 18%);
   --very-dark-blue: hsl(216, 12%, 8%);
 }
@@ -46,22 +47,27 @@ button {
   font: inherit;
 }
 
-.main,
-.response {
+/* STYLE RATING STATE*/
+.main__rating,
+.main__response {
   background-color: var(--dark-blue);
   padding: 2rem;
   border-radius: 1rem;
   height: 80%;
 }
 
-.main__image {
-  background-color: var(--light-grey);
+.main__hidden {
+  display: none;
+}
+
+.rating__image {
+  background-color: var(--shade-blue);
   padding: 1rem;
   border-radius: 50%;
   margin-bottom: 2rem;
 }
 
-.main__list {
+.rating__list {
   list-style: none;
   padding: 1rem 0;
   display: flex;
@@ -69,17 +75,28 @@ button {
   padding-bottom: 2rem;
 }
 
+.rating__list:hover > .list__item {
+  background-color: var(--light-grey);
+}
+
+.rating__list:hover > .list__item:hover {
+  background-color: var(--orange);
+}
+
 .list__item {
-  background-color: var(--medium-grey);
+  background-color: var(--shade-blue);
   border-radius: 50%;
   text-align: center;
   line-height: 3rem;
   width: 3rem;
 }
 
-.main__submitBtn {
+.list__item:hover {
   background-color: var(--orange);
-  color: var(--white);
+  cursor: pointer;
+}
+
+.main__button {
   border: 0;
   margin: 0 auto;
   text-align: center;
@@ -88,8 +105,37 @@ button {
   border-radius: 2rem;
 }
 
-.response--hidden {
-  display: none;
+.main__button--rating {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.main__button--rating:hover {
+  background-color: var(--white);
+  color: var(--orange);
+  cursor: pointer;
+}
+
+/* STYLE RESPONSE STATE*/
+.main__response {
+  text-align: center;
+}
+
+.response__image {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.main__button--response {
+  color: var(--orange);
+  background-color: var(--shade-blue);
+  margin-bottom: 1.5rem;
+  width: 60%;
+}
+
+.response__title {
+  margin-bottom: 1rem;
 }
 
 
@@ -99,5 +145,20 @@ button {
 }
     
 .attribution a {
-   color: hsl(228, 45%, 44%); 
+   color: hsl(228, 60%, 60%); 
+}
+
+
+.parent {
+   display: flex;
+   list-style: none;
+   justify-content: space-between;
+}
+
+.parent:hover > .list__item {
+  background-color: var(--light-grey);
+}
+
+.parent:hover > .list__item:hover {
+  background-color: var(--orange);
 }

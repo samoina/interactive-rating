@@ -13,15 +13,16 @@
 <body>
 
   <main class="main">
-    <img class="main__image" src="./images/icon-star.svg" alt="Icon for star">
-    <h1 class="main__title">How did we do?</h1>
+    <div class="main__rating">
+      <img class="rating__image" src="./images/icon-star.svg" alt="Icon for star">
+    <h1 class="rating__title">How did we do?</h1>
 
-    <p class="main__para">
+    <p class="rating__para">
       Please let us know how we did with your support request. All feedback is appreciated
       to help us improve our offering!
     </p>
 
-    <ul class="main__list">
+    <ul class="rating__list">
       <li class="list__item">1</li>
       <li class="list__item">2</li>
       <li class="list__item">3</li>
@@ -29,22 +30,24 @@
       <li class="list__item">5</li>
     </ul>
 
-    <button class="main__submitBtn">
+    <button class="main__button main__button--rating">
       SUBMIT
     </button>
-  </main>
+    </div>
 
-  <br>
-
-  <section class="response response--hidden">
+  <section class="main__response main__hidden">
+   <div class="response__image" >
     <img src="./images/illustration-thank-you.svg" alt="">
-    <p class="response__para response__para--highlight">
-      You selected <!-- Add rating here--> out of 5
-    </p>
+   </div>
+    <button class="main__button main__button--response">
+      You selected <span class="response--rating">4</span> out of 5
+    </button>
 
     <h2 class="response__title">Thank you!</h2>
     <p class="response__para">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
   </section>
+
+</main>
 
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
