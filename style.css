@@ -10,7 +10,6 @@
   --very-dark-blue: hsl(216, 12%, 8%);
 }
 
-
 /* CSS Reset*/
 *, 
 *::before,  
@@ -46,6 +45,7 @@ img {
 button {
   font: inherit;
 }
+
 
 /* STYLE RATING STATE*/
 .main__rating,
@@ -138,27 +138,14 @@ button {
   margin-bottom: 1rem;
 }
 
-
-.attribution { 
-  font-size: 11px; 
-  text-align: center; 
-}
-    
-.attribution a {
-   color: hsl(228, 60%, 60%); 
+.collection {
+  color: white;
 }
 
-
-.parent {
-   display: flex;
-   list-style: none;
-   justify-content: space-between;
+@media (min-width: 500px) {
+  .main {
+    max-width: 30rem;
+  }
 }
+ 
 
-.parent:hover > .list__item {
-  background-color: var(--light-grey);
-}
-
-.parent:hover > .list__item:hover {
-  background-color: var(--orange);
-}

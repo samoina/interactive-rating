@@ -75,6 +75,37 @@ I was a little confused on how to achieve this, but found a resourceful way to d
 }
 ```
 
+3. A refresher on event delegation. In my Javascript, I added two event listeners. One on the list containing the rating numbers to capture the rating selected, and the other on the submit button.
+
+Event Delegation came with the first event listener. Here, I targeted the parent container (the ul) and used e.target.textContent to find the text inside of the ul. I put this in a variable.
+
+In the second event listener on the Submit button, i:
+- hide the Rating component by toggling the class set to hidden
+- set the rating chosen onto the Thank You component
+- displayed the Thank You component by toggling the class as below.
+
+```javascript
+/*set event listener on list and submit btn*/
+ratingList.addEventListener('click', getListValue);
+mainBtnRating.addEventListener('click', displayResponse)
+
+/* when a list item is clicked, get its text content and place it in a variable*/
+function getListValue(e){
+  listValue = e.target.textContent;
+  console.log(listValue);
+}
+
+/* When the submit button is clicked, hide the rating component, overwrite the value provided and display the Thank you component*/
+function displayResponse(ev){
+  console.log(`You selected ${listValue} out of 5`);
+  mainRating.classList.toggle('main__hidden');
+  rating.textContent = listValue;
+  mainResponse.classList.toggle('main__hidden');
+  
+  ev.preventDefault();
+}
+```
+
 ### Continued development
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
