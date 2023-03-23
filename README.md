@@ -99,6 +99,26 @@ Here's the code that I edited within the event listener for the ratings click:
 
 ```javascript
 
+let activeButton;
+
+function getListValue(e){
+  listValue = e.target.textContent; 
+  console.log(e.target.textContent); 
+  const target = e.target;
+
+  if(target.matches('Button')){
+    if(activeButton){
+      activeButton.style.backgroundColor = '';
+      activeButton.style.color = ''
+    }
+
+    target.style.backgroundColor = 'green';
+    target.style.color = '#fff';
+
+    activeButton = target;
+  }
+}
+
 ```
 
 ### Useful resources

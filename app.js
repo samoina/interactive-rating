@@ -1,4 +1,4 @@
-let mainBtnRating = document.querySelector('.main__button--rating'),
+let mainBtnRating = document.querySelector('.main__button--submit'),
     ratingList = document.querySelector('.rating__list'),
     mainRating = document.querySelector('.main__rating'),
     mainResponse = document.querySelector('.main__response'),
@@ -27,7 +27,6 @@ function getListValue(e){
     activeButton = target;
   }
 }
-
 
 function displayResponse(ev){
   console.log(`You selected ${listValue} out of 5`);
