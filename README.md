@@ -87,6 +87,20 @@ function displayResponse(ev){
 }
 ```
 
+4. I got some feedback after I submitted my solution on the ForntedMentor Challenge hub. It made me realize it is helpful to let the user know the button that they have presently selected by changing the backgroundcolor. The steps I followed included: 
+- declaring a variable for the active button selected ( I noticed that declaring the variable outside of the event listener (as a global variable) works, but inside the event listener (As a local variable) it does not. I am not sure why.
+)
+- Within the ratings event listener, I used Events Delegation to get the present button selected, through using the target (e.target)
+- if the targets contains 'Button' then change the background color and color, but first, check if there's an already exisiting active Button.
+- If there is an exisiting active button, get rid of the bg color and color.
+- Lastly, make the present target the active button
+
+Here's the code that I edited within the event listener for the ratings click:
+
+```javascript
+
+```
+
 ### Useful resources
 
 1. [Josh Comeau's CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/#our-finished-product-11) - This is an excellent resource for doing a CSS reset. This involves creating a custom baseline style that makes CSS  alot easier to style. I really loved how Josh took time to breakdown his approach, and I will be using his style and tweaking it to suit my projects going forward.

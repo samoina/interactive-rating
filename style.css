@@ -75,23 +75,24 @@ button {
   padding-bottom: 2rem;
 }
 
-.rating__list:hover > .list__item {
+.rating__list:hover > .rating__button {
   background-color: var(--light-grey);
 }
 
-.rating__list:hover > .list__item:hover {
+.rating__list:hover > .rating__button:hover {
   background-color: var(--orange);
 }
 
-.list__item {
+.rating__button {
   background-color: var(--shade-blue);
   border-radius: 50%;
+  border: none;
   text-align: center;
   line-height: 3rem;
   width: 3rem;
 }
 
-.list__item:hover {
+.rating__button:hover {
   background-color: var(--orange);
   cursor: pointer;
 }
@@ -105,12 +106,12 @@ button {
   border-radius: 2rem;
 }
 
-.main__button--rating {
+.main__button--submit {
   background-color: var(--orange);
   color: var(--white);
 }
 
-.main__button--rating:hover {
+.main__button--submit:hover {
   background-color: var(--white);
   color: var(--orange);
   cursor: pointer;
